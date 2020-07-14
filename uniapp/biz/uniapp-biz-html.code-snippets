@@ -1,0 +1,57 @@
+{
+  "view-page": {
+    "body": [
+      "<template>",
+      "  <view class=\"view-page\">",
+      "    <view class=\"header\">",
+      "      <view class=\"titleNview-placing\" :style=\"{ height: statusBarHeight + 'px' }\"></view>",
+      "      <view class=\"navbar\">",
+      "        <view class=\"iconmp-fanhui iconfont backbtn\" @click=\"_handleNavBack\"></view>",
+      "        <view class=\"title\">",
+      "          <text>$1</text>",
+      "        </view>",
+      "      </view>",
+      "    </view>",
+      "    <view class=\"content\">",
+      "      <view class=\"top-banner\">",
+      "        <view class=\"banner\">",
+      "          <van-image",
+      "            fit=\"cover\"",
+      "            width=\"100%\"",
+      "            height=\"100%\"",
+      "            src=\"\"",
+      "          />",
+      "        </view>",
+      "        <view class=\"banner-radius\"></view>",
+      "      </view>",
+      "      <view class=\"${2|body,body-padding,body-padding relative-box|}\"></view>",
+      "    </view>",
+      "  </view>",
+      "</template>",
+      "",
+      "<script>",
+      "import pageMixin from '@/mixins/pageMixin'",
+      "",
+      "export default {",
+      "  mixins: [pageMixin]",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\">",
+      "</style>"
+    ],
+    "prefix": "viewpage"
+  },
+  "acr": {
+    "body": ["<image class=\"arc\" src=\"@/static/arc.png\" />"],
+    "prefix": "acr"
+  },
+  "text": {
+    "body": ["<text>$1</text>"],
+    "prefix": "text"
+  },
+  "icon": {
+    "body": ["<text class=\"iconfont $1\"></text>"],
+    "prefix": "icon"
+  }
+}
