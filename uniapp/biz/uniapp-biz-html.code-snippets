@@ -14,17 +14,12 @@
       "    </view>",
       "    <view class=\"content\">",
       "      <view class=\"top-banner\">",
-      "        <view class=\"banner\">",
-      "          <van-image",
-      "            fit=\"cover\"",
-      "            width=\"100%\"",
-      "            height=\"100%\"",
-      "            src=\"\"",
-      "          />",
+      "        <view class=\"banner\" ${2| ,style=\"height:200rpx\"|}>",
+      "          ${3:<van-image fit=\"cover\" width=\"100%\" height=\"100%\" src=\"\" />}",
       "        </view>",
       "        <view class=\"banner-radius\"></view>",
       "      </view>",
-      "      <view class=\"${2|body,body-padding,body-padding relative-box|}\"></view>",
+      "      <view class=\"${4|body,body-padding,body-padding relative-box|}\"></view>",
       "    </view>",
       "  </view>",
       "</template>",
@@ -44,14 +39,17 @@
   },
   "acr": {
     "body": ["<image class=\"arc\" src=\"@/static/arc.png\" />"],
-    "prefix": "acr"
+    "prefix": "acr",
+    "scope": "vue-html"
   },
   "text": {
     "body": ["<text>$1</text>"],
-    "prefix": "text"
+    "prefix": "text",
+    "scope": "vue-html"
   },
   "icon": {
     "body": ["<text class=\"iconfont $1\"></text>"],
-    "prefix": "icon"
+    "prefix": "icon",
+    "scope": "vue-html"
   }
 }
